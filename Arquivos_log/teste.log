@@ -1,0 +1,7 @@
+2026-08-25 10:50:21.427 | INFO     | __main__:Faixa:7 - Digite a idade: 
+2026-08-25 10:50:30.322 | INFO     | __main__:Faixa:11 - E maior de idade
+2026-08-28 00:41:02.982 | INFO     | __main__:Faixa:7 - Digite a idade: 
+2026-08-28 00:41:08.235 | INFO     | __main__:Faixa:11 - E maior de idade
+2026-08-28 00:45:04.305 | INFO     | __main__:Faixa:10 - Digite a idade: 
+2026-08-28 00:46:39.701 | INFO     | __main__:Faixa:10 - Digite a idade: 
+2026-08-28 00:46:57.809 | WARNING  | __main__:Faixa:16 - Essa idade nao permitido entrar

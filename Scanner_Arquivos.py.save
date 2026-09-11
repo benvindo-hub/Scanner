@@ -1,0 +1,32 @@
+import typer as tp
+import sqlite3
+import sys
+import ast
+from patchlib import Patch
+from datetime import datetime 
+from rich.console import Console
+from rich.table import Table
+from pydantic  import BaseModel
+from loguru import logger as lg
+
+app=tp.Typer()
+name_json="Arquivos_Json/Scanner_Relatorio.json"
+name_db="Arquivos_DB/Scanner.db"
+console=Console()
+
+lg.remove()
+lg.add(sys.stdout,format="<level>{level: <8}</level> | {message}")
+lg.add("Atquivos_Log/app.log",format="{time} <level>{level: <8}</level> | {message}")
+
+def Vuln(caminho: str):
+	arquivos=Patch(caminho)
+	for arquivo in arquivos.glob("**/*.py"):
+		if insistance(arquivo
+class Conf(BaseModel):
+	caminho: str
+	formato: str
+
+@app.callback(invoke_without_command=True)
+def scan(caminho: str,formato: str):
+	dados=Conf(caminho=caminho,formato=formato)
+	if  dados.formato.lower()!="sarif
